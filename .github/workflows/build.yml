@@ -1,6 +1,7 @@
 name: build
 permissions: read-all
 on: [ push, pull_request ]
+workflow_dispatch:
 
 env:
   GRADLE_ENTERPRISE_CACHE_PASSWORD: ${{ secrets.GRADLE_ENTERPRISE_CACHE_PASSWORD }}
